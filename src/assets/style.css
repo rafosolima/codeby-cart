@@ -1,0 +1,132 @@
+body {
+  font-family: 'Poppins';
+  font-size: 20px;
+}
+
+hr {
+  width: 100%;
+  background-color:#bbbb;
+  height: 1px; 
+  border: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #bbbb;
+  border-radius: 20px;
+  margin: 10px;
+  -webkit-box-shadow: 9px 7px 5px #bbbb;
+  -moz-box-shadow:    9px 7px 5px #bbbb;
+  box-shadow:         9px 7px 5px #bbbb;
+}
+
+.card h3 {
+  margin: 10px 0 0 10px;
+}
+
+.productCard {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.productCard img {
+  border: 2px solid #bbbb;
+  width: 150px;
+  height: 180px;
+  margin: 10px 15px 0px 10px;
+}
+
+.productCard .item {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-right: 40px;
+}
+
+.productCard .label {
+  font-weight: 800;
+  font-size: 22px;
+}
+
+.productCard .priceOlder {
+  font-size: smaller;
+  color: grey;
+}
+
+.productCard .price {
+  font-weight: 800;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bolder;
+  font-size: 24px;
+  width: 90%;
+}
+.footer-button {
+  padding: 20px;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 800;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .500rem 5rem;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.mensagem {
+  margin: 10px;
+  background-color: #85e79c;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 5px 10px 10px 5px;
+}
+
+.mensagem span {
+  font-size: 17px;
+  font-weight: 800;
+  color: #104a1d
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) {
+  .card {
+    width: 100%;
+    border-radius: none;
+    border: none;
+    box-shadow: none;
+  }
+  .mensagem {
+    text-align: center;
+  }
+}
